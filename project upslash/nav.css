@@ -1,0 +1,43 @@
+#navbar{
+    display: flex;
+    width: 100%;
+  }
+  #logo{
+    width: 20%;
+  }
+  #logo > img {
+    height: 70px;
+
+    margin-left: 25px;
+  }
+  #names > .sel {
+    margin-left: 25px;
+  }
+  #names {
+    width: 60%px;
+    display: flex;
+    margin-left: 150px;
+  }
+  #link {
+    width: 20%;
+    cursor: pointer;
+    margin-left: 250px;
+    text-decoration: none;
+  }
+  #navbar h3{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(116, 116, 116);
+    text-decoration:none;
+  }
+  #navbar a{
+    text-decoration:none;
+  }
+  #navbar h3:hover{
+  color: black;
+  
+  }
+  .sel>h3{
+    text-decoration: none;
+    color: aqua;
+  }
