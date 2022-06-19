@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Images</title>
+    <link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32"
+        href="https://unsplash.com/favicon-32x32.png">
+    <link rel="stylesheet" href="./photo.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="header">
+        <a href="./photo.html">
+            <div class="photo">
+                <img src="./Photo.png" alt="preview">
+                <p>Photo</p>
+                <p id="count">0</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="like">
+                <img src="./Like.png" alt="preview">
+                <p>Likes</p>
+                <p id="likecount">0</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="collection">
+                <img src="./Collabaration.png" alt="preview">
+                <p>Collections</p>
+                <p>1</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="stats">
+                <img src="./star.png" alt="preview">
+                <p>Stats</p>
+                <p></p>
+            </div>
+        </a>
+
+        <!-- <img src="./header.png" alt=""> -->
+    </div>
+    <hr>
+    <div class="container"></div>
+</body>
+
+</html>
+<script src="./photo.js"></script>
+
+<script type="module">
+
+    var logindata = JSON.parse(localStorage.getItem("userlogindata"));
+    var user = document.querySelector("#header");
+    import { navbar } from "../components/navbar.js"
+    if (logindata !== null) {
+        let nav = document.getElementById("header")
+        nav.innerHTML = navbar();
+    }
+</script>
