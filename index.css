@@ -1,0 +1,382 @@
+
+/*header and navbarr css part starts*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+        body {
+        font-family: 'Helvetica', sans-serif;
+        }
+
+        header{
+        position: sticky;
+          top:0;
+          z-index: 10;
+          background: #fff;
+      }
+        .logo>a>img{
+            width:60px;
+            height:30px;
+        }
+       
+        ul {
+        list-style: none;
+        font-size:medium;
+        }
+        a{
+            text-decoration: none;
+            color: #767676;
+        }
+        /*****navbar******/
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            
+            }
+ 
+            .nav {
+                display: flex;
+                gap: 20px;
+                
+                 }
+
+            input{
+                width:623px;
+                height: 33px;
+                font-size: medium;  
+                border-radius: 15px;
+                border-width: 0.5px;
+                border: 0;
+                padding-left: 10px;
+                background-color: #f4f0f0; 
+                position: relative;
+            }
+
+            div.vertical-line{
+                width: 1px; 
+                background-color: grey;
+                height: 25px;
+                float: left; 
+            }
+
+            #menu_icon{
+                height:25px;
+                width:25px;
+                cursor: pointer;
+            }
+            .a{
+                height: auto;
+                width:auto;  
+                padding-top: 7px;
+            }
+            #slash{
+                font-size: x-large;
+            }
+            #btn{
+                height: 28px;
+                background-color: azure;
+                border-width: 1px;
+                border-radius: 5px;
+                color: #767676;
+                cursor: pointer;   
+            }
+
+            /* <--category--> */
+
+            .category-nav {
+            display: flex;
+            gap: 20px;
+            padding-left: 0.6rem;
+            overflow: hidden;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            
+            }
+
+            .category a {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 1;
+            display: flex;
+            }
+
+            #side{
+                display:flex;
+                gap:20px;
+                width:90%;
+                overflow: scroll;
+                
+            }
+            #side::-webkit-scrollbar{
+                display:none;
+            }
+            #top_edit{
+                display:flex;
+                gap:20px
+            }
+           
+              /*after login navbar changes css*/
+            #user,#alert{
+              /* height:30px; */
+              width:25px;
+              border-radius:55%;
+              margin-right:0 ;
+              }
+              #user{
+                border: 1px solid grey;
+              }
+              
+                 /*after login navbar changes css*/
+
+            /*search box drop down css*/
+            #aftersearch{
+              position:absolute;
+              top:55px;
+              padding-left: 15px;
+              width:49%;
+              background-color: #fff;
+              border-top:1px solid #ccc;
+              -webkit-box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+              display:none;
+            }
+            .btn{
+              font-size:small;
+              height: 35px;
+              width:105px;
+              cursor: pointer;
+              color: #767676;
+            }
+
+            #srch{
+              display: grid;
+              grid-template-columns: repeat(4,1fr);
+              margin-bottom: 10px;
+              
+            }
+            p{
+              margin-bottom: 10px;
+            }
+
+            /**********menu click************/
+
+            #menu_click{
+              position:absolute;
+              top:55px;
+              width:50%;
+             margin-left: -260px;
+              background-color: #fff;
+              border-top:1px solid #ccc;
+              -webkit-box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+              display: flex;
+              visibility: hidden;
+              gap: 25px;
+              
+            }
+            #menu_click.active{
+              visibility: visible;
+            }
+
+            #afterclick{
+
+              margin-top: 10px;
+              margin-bottom: 13px;
+            }
+            #afterclick li{
+              margin-top: 10px;
+            }
+            .log{
+              height: 20px;
+              width: 20px;
+              margin-top: 12px;
+            }
+
+
+/*header and navbar css part ends*/
+
+
+/*wallpaper css part starts*/
+
+.main {
+    height: 850px;
+    background: url('https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat right top;
+    background-size: 100% 700px;
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  .main-container {
+    max-width: 60%;
+    margin: auto;
+    
+  }
+  
+  .main-content {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .main-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .main-content p {
+    color: #fff;
+    z-index: 2;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  .main-search input {
+    width: 100%;
+    /* padding: 1.2rem; */
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    font-size: 0.9rem;
+  }
+
+  /*wallpaper searchbox drop down */
+
+
+ #wallpaper_search{
+              position:absolute;
+              width:60.5%;
+              padding-left: 10px;
+              background-color: #fff;
+              border-top:1px solid #ccc;
+              -webkit-box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+              display:none;
+              margin-bottom: 20px;
+            }
+            h5{
+              margin-bottom: 15px;
+              margin-top: 15px;
+              text-decoration: underline;
+              
+            }
+            #wall_search{
+              margin-bottom: 10px;
+            }
+
+
+ /*below wallpaper images appended */
+
+  #data_pics{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 4px;
+  margin-top: -130px;
+  margin-left: 10px;
+ } 
+ 
+ 
+  #img{
+  width:100%;
+ } 
+ #img:hover{
+
+  background-image: url(img/add_btn.png);
+
+ }
+
+ #do{
+  cursor: pointer;
+ }
+ 
+ 
+        /* /////////////////////////////////////////////////////////////////////////////// */
+        #box{
+          margin-top: 20px;
+          position: relative;
+      }
+
+      #box:hover>.addsign{
+          visibility: visible;
+          opacity: 0.7;
+      }
+      #box:hover>.likes{
+          visibility: visible;
+          opacity: 0.7;
+      }
+      #box:hover>.propicDiv{
+          visibility: visible;
+      }
+      #img{
+          position: relative;
+          width: 100%;
+      }
+      .likes{
+          height:30px;
+          width:30px;
+          position:absolute;
+          top: 10px;
+          right: 50px;
+          background-color: #eee;
+          padding: 5px;
+          border-radius: 5px;
+          visibility: hidden;
+          
+      }
+
+      .addsign{
+          height:30px;
+          width:30px;
+          position:absolute;
+          top: 10px;
+          right: 15px;
+          background-color: #eee;
+          padding: 5px;
+          border-radius: 5px;
+          visibility: hidden;
+      }
+      .propicDiv{
+  
+          position:absolute;
+          display: flex; 
+          bottom: 20px;  
+          gap: 10px;
+          margin-left: 10px; 
+          visibility: hidden;
+
+      }
+      .proPic{
+          /* position: absolute; */
+          height:35px;
+          width:35px;
+          border-radius: 50%;
+      }
+      .propicDiv>p{
+          font-size: 18px;
+          font-weight:300;
+          color: white;
+          padding-top: 8px;
+      }
+
+      
+      /* effect on images on hovering */
+
+      #box:hover{
+          background-color: black;
+          cursor: zoom-in;
+          
+      }
+
+     
+      #img:hover{
+          opacity: 0.5;
+      }
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
