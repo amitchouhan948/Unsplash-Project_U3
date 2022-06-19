@@ -32,7 +32,7 @@
     cursor: pointer;
     opacity: 0.5;
 }
-.photo:hover, .like:hover, .collection:hover, .stats:hove3{
+.photo:hover, .like:hover, .collection:hover, .stats:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
