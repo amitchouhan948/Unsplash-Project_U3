@@ -22,7 +22,7 @@
 .header{
     display: flex;
     align-items: center;
-    
+    text-decoration: none;
 }
 
 .photo, .like, .collection, .stats{
