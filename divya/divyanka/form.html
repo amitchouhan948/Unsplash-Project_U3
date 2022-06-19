@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            height:38px;
+            width:100%;
+            /* border:1px solid black; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display:flex;
+            justify-content: space-between;
+        }
+        #nav_img{
+            border-radius: 20px;
+        }
+        h3{
+            margin-top:-11px;
+            font-size: 20px;
+            margin-bottom: -1px;
+            color:rgb(67, 66, 66);
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        #container{
+            height:340px;
+            width:280px;
+            /* border:2px solid red; */
+            margin-top: 35px;
+        }
+        #first_div{
+            height:auto;
+            width:910;
+            /* border:2px solid black; */
+            margin-top: -340px;
+            margin-left: 340px;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            display:flex
+        }
+        #one{
+            height:300px;
+            width:35%;
+            /* border:1px solid red */
+        }
+        #two{
+            height:100%;
+            width:65%;
+            /* border:1px solid red */
+        }
+        #two>div{
+            height:29%;
+            width:100%;
+            /* border:1px solid blue; */
+            display: flex;
+        }
+        #two>div>div{
+            height:100%;
+            /* width:50%; */
+            /* border:1px solid blue */
+        }
+        label{
+            font-size: 16px;
+            margin-top: -15px;
+            color:rgb(41, 40, 40);
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        input{
+            border:1px solid rgb(55, 53, 53);
+            height:30px;
+            width:270px;
+            margin-top: 15px;
+            border-radius:4px;
+        }
+        #email{
+            border:1px solid rgb(55, 53, 53);
+            height:30px;
+            width:570px;
+            border-radius:4px;
+        }
+        #username{
+            border:1px solid rgb(55, 53, 53);
+            height:30px;
+            width:570px;
+            border-radius:4px;
+        }
+        #second_div{
+            height:auto;
+            width:910;
+            /* border:2px solid black; */
+            margin-left: 340px;
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+        #second_div>h3+div>div{
+            height:100%;
+            width:50%;
+            margin-left: -5px;
+            /* border:1px solid blue */
+        }
+        #second_div>h3+div+div>div{
+            height:100%;
+            width:50%;
+            margin-left: -5px;
+            /* border:1px solid blue */
+        }
+        .input{
+            width:422px;
+        }
+        #second_div>div{
+            height:33%;
+            width:100%;
+            /* border:1px solid red; */
+        }
+        #second_div>h3+div{
+            display: flex;
+        }
+        #second_div>h3+div+div{
+            display: flex;
+        }
+        #second_div>h3+div+div+div{
+            display: flex;
+        }
+        #bio{
+            height:100px
+        }
+        #usernames{
+            width: 100%;
+            /* border:1px solid red */
+        }
+        #lastname{
+            margin-left: 23px;
+        }
+        #last{
+            margin-left:25px;
+        }
+        span{
+            opacity:70%;
+        }
+        p{
+            font-size: 14px;
+            color:rgb(90, 87, 87);
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        #third_div{
+            height:auto;
+            width:910;
+            /* border:2px solid black; */
+            margin-left: 340px;
+            padding-top: -80px;
+            padding-bottom: 40px;
+        }
+        #msg{
+            margin-top:-110px;
+        }
+        #fourth_div{
+            height:auto;
+            width:910;
+            /* border:2px solid black; */
+            margin-left: 340px;
+            padding-top: -80px;
+            padding-bottom: 40px;
+        }
+        button{
+            height:40px;
+            width:890px;
+            font-size: 17px;
+            margin-left: 28%;
+            margin-top: -100px;
+            color:white;
+            background-color: black;
+        }
+        #img{
+            margin-left: 70px;
+            margin-top: 20px;
+            border-radius: 89px;
+            /* opacity: 30%; */
+        }
+        a{
+            /* text-decoration: none; */
+            color:gray;
+            margin-left: 90px;
+        }
+        #heading{
+            margin-top: 1px;
+        }
+        h4{
+            font-size: 16px;
+            opacity: 80%;
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        .para{
+            font-size: 15px;
+            margin-left: -86px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt="abc">
+        <img id="nav_img" src="https://tse4.explicit.bing.net/th?id=OIP.fVzdKE2EPZzB5PiI1pvaFQHaHa&pid=Api&P=0&w=169&h=169" alt="abc"/>
+    </div>
+    <div id="container">
+        <h3 id="heading">Account settings</h3>
+        <h4>Edit profile</h4>
+        <p class="para"><a href="">Hiring</a></p>
+        <p class="para"><a href="">Download History</a></p>
+        <p class="para"><a href="">Email settings</a></p>
+        <p class="para"><a href="">Change password</a></p>
+        <p class="para"><a href="">Connect account</a></p>
+        <p class="para"><a href="">Applications</a></p>
+        <p class="para"><a href="">Close accounts</a></p>
+    </div>
+    <div id="first_div">
+        <div id="one">
+            <h3>Edit Profile</h3>
+            <div>
+                <img id="img" src="https://tse4.explicit.bing.net/th?id=OIP.fVzdKE2EPZzB5PiI1pvaFQHaHa&pid=Api&P=0&w=169&h=169" alt="abc"/>
+            </div>
+            <p><a href="">Change profile image</a></p>
+            <label>Badge</label>
+            <p>You don't have any badges yet :(</p>
+        </div>
+        <div id="two">
+            <div>
+                <div>
+                    <br><label>First Name</label><br/>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <br><label id="last">Last Name</label><br/>
+                    <input type="text" id="lastname">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <br><label>Email</label><br/>
+                    <input type="text" id="email">
+                </div>      
+            </div>
+            <div>
+                <div>
+                    <br/><label id="usernames">Username <span>(only letters, numbers, and underscores)</span></label><br/>
+                    <input type="text" id="username">
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="second_div">
+        <h3>About</h3>
+        <div>
+            <div>
+                <br><label>Location</label><br/>
+                <input type="text" id="location" class="input">
+            </div>
+            <div>
+                <br><label>Personal site / Portfolio</label><br/>
+                <input type="text" id="portfolio" class="input">
+            </div>
+        </div>
+        <!-- second div -->
+        <div>
+            <div>
+                <br><label>Bio</label><br/>
+                <input type="text" id="bio" class="input">
+            </div>
+            <div>
+                <br><label>Interest (maximum 5)</label><br/>
+                <input type="text" id="interest" class="input">
+                <p>Your interests are generated from the types of photos you like, collect, and contribute.</p>
+            </div>
+        </div>
+    </div>
+    <div id="second_div">
+        <h3>Social</h3>
+        <div>
+            <div>
+                <br><label>Instagram username</label><br/>
+                <input type="text" id="ig" class="input">
+                <p>So that we can feature you on @unsplash</p>
+            </div>
+            <div>
+                <br><label>Twitter username</label><br/>
+                <input type="text" id="twitter" class="input">
+                <p>So that we can feature you on @unsplash</p>
+            </div>
+        </div>
+    </div>
+    <div id="third_div">
+        <h3>Donations</h3>
+        <div>
+            <div>
+                <br><label>PayPal email or username for donations</label><br/>
+                <input type="text" id="donation" class="input" placeholder="name@domain.com">
+                <p>Note: This email/username will be public</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fourth_div" id="msg">
+        <h3>Messaging</h3>
+        <div>
+            <div>
+                <!-- <br><label>PayPal email or username for donations</label><br/> -->
+                <input type="text" id="message" class="input" placeholder="Display message button on your profile.">
+                <p>Messages will be sent to your email</p>
+            </div>
+        </div>
+    </div>
+    <button id="btn">Update account</button>
+</body>
+</html>
+<script>
+    var data_arr = JSON.parse(localStorage.getItem("user_data")) || []
+    console.log(data_arr.name)
+    var btn = document.querySelector("#btn").addEventListener("click",function(event){
+        event.preventDefault()
+        // console.log("hiii")
+        var data = {
+              name :document.getElementById("name").value,
+              lastname : document.getElementById("lastname").value,
+              email : document.getElementById("email").value,
+              username : document.getElementById("username").value,
+              location : document.getElementById("location").value,
+              portfolio : document.getElementById("portfolio").value,
+              bio : document.getElementById("bio").value,
+              interest : document.getElementById("interest").value,
+              ig : document.getElementById("ig").value,
+              twitter : document.getElementById("twitter").value,
+              donation : document.getElementById("donation").value,
+              msg : document.getElementById("message").value
+        }
+        localStorage.setItem("user_data",JSON.stringify(data))
+        window.location.href="profile.html"
+        window.location.reload
+    })
+</script>
