@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Free Images & Pictues | Unsplash</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://unsplash.com/favicon-32x32.png">
+    <link rel="stylesheet" href="upload.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="upload-form">
+        <div class="upper-part">
+            <p>Submit to Unsplash</p>
+            <p>Need help?</p>
+        </div>
+        <div class="border">
+           <div class="img-upload" onclick="addImage()">
+                <input type="file" id="file-upload">
+                <img src="./1x.png" alt="Click to upload" id="img-preview">
+                <h3 class="uploaded-photo">Click here to Upload images</h3>
+            </div> 
+        </div>
+        <div class="lower-part">
+            <p>Read the Unsplash License</p>
+            <div class="btns">
+                <button class="cancel">Cancel</button>
+                <button class="submit" onclick="uploadImage()">Submit to Unsplash</button>
+            </div>
+        </div>
+
+    </div>
+    <a href="../index.html"> <div class="close-popup">&times;</div></a>
+   
+</body>
+
+</html>
+<script src="./upload.js"></script>
