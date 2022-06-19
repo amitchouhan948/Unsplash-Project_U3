@@ -9,7 +9,7 @@
     <link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32"
         href="https://unsplash.com/favicon-32x32.png">
     <link rel="stylesheet" href="./photo.css">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
 
     var logindata = JSON.parse(localStorage.getItem("userlogindata"));
     var user = document.querySelector("#header");
-    import { navbar } from "../components/navbar.js"
+    import { navbar } from "./components/navbar.js"
     if (logindata !== null) {
         let nav = document.getElementById("header")
         nav.innerHTML = navbar();
