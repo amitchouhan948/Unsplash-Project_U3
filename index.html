@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsplash</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar">
+      <div class="left ">
+        <div class="logo">
+          <a href="index.html"><img
+              src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_4f2153ce7e0ebcddea8a5d6dc9787757/unsplash.png"
+              alt=""></a>
+        </div>
+      </div>
+
+      <div class="nav-search-form ">
+
+        <!-- <button id="srch_btn"><img src="img/seacrh - Copy.png" alt="search" onclick="find()"></button> -->
+        <input  onchange="searchPage()" type="text" placeholder="Search free high-resolution photos" id="search">
+
+        <div id="aftersearch">
+          <p>Trending Searches</p>
+          <ul id="srch" class="nav">
+            <li><button class="btn">Yellow-Petals</button></li>
+            <li><button class="btn">Car</button></li>
+            <li><button class="btn">Books</button></li>
+            <li><button class="btn">Photos</button></li>
+            <li><button class="btn">Night Sky</button></li>
+          </ul>
+
+          <p>Trending Topics</p>
+          <ul id="srch" class="nav">
+            <li><button class="btn">Fashion</button></li>
+            <li><button class="btn">People</button></li>
+            <li><button class="btn">Film</button></li>
+            <li><button class="btn">Nature</button></li>
+            <li><button class="btn">Animals</button></li>
+          </ul>
+
+          <p>Trending Collections</p>
+          <ul id="srch" class="nav">
+            <li><button class="btn">Church</button></li>
+            <li><button class="btn">Interior&nbspFrames</button></li>
+            <li><button class="btn">Mockups</button></li>
+            <li><button class="btn">Mute&nbsp&&nbsppastel</button></li>
+            <li><button class="btn">Light&nbspTones</button></li><br />
+          </ul>
+
+        </div>
+      </div>
+      <div class="a">
+        <ul class="nav">
+          <li><a href="">Explore</a></li>
+          <li><a href="">Advertise</a></li>
+          <li><a href="project upslash/blog.html">Blog</a></li>
+          <div class="vertical-line"></div>
+          <li><a href="gautam_login&signup/login.html">Log in</a></li>
+          <li><a href="" id="slash">/</a></li>
+          <li><a href="gautam_login&signup/signUp.html">Sign up</a></li>
+          <li><a href="./Submit-Photo/photosubmit.html"><button id="btn">Submit a photo</button></a></li>
+          <li><img src="img/menu.png" alt="" id="menu_icon" onclick="toggle()"></li>
+        </ul>
+
+        <div id="menu_click">
+          <img src="img/company.png" alt="" class="log">
+          <ul id="afterclick">
+            <h3>Company</h3>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Join Team</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+
+          <img src="img/product.png" alt="" class="log">
+          <ul id="afterclick">
+            <h3>Product</h3>
+            <li><a href="#">Developers/API</a></li>
+            <li><a href="#">Unsplash Dataset</a></li>
+            <li><a href="#">Unsplash for iOS</a></li>
+            <li><a href="#">Apps & Plugins</a></li>
+
+          </ul>
+
+          <img src="img/community.png" alt="" class="log">
+          <ul id="afterclick">
+            <h3>Community</h3>
+            <li><a href="#">Be a Contributor</a></li>
+            <li><a href="#">Topics</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Trends</a></li>
+            <li><a href="#">Unsplash Awards</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="category-nav">
+
+      <div id="top_edit">
+        <div class="category" onclick="underline()">
+          <a href="index.html">Editorial</a>
+        </div>
+        <div class="category">
+          <a href="#">Following</a>
+        </div>
+        <div class="category">
+          <div class="vertical-line"></div>
+        </div>
+
+      </div>
+
+      <div id="side">
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a href="./photo.html">RecentlyUploads</a></h4>
+
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Current&nbspEvents</a></h4>
+
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Wallpaper</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>3D&nbspRenders</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Texture&nbsp&&nbspPatterns</a></h4>
+
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Nature</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Architecture</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Business&nbsp&&nbspWork</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Experimental</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Film</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Animals</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Travel</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Fashion</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Foods&nbsp&&nbspDrinks</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Health&nbsp&&nbspWellness</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>People</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Interiors</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Street&nbspPhotography</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>History</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Atheletics</a></h4>
+        </div>
+        <div class="category">
+          <h4 onclick="doit(this)" id="do"><a>Spirituality</a></h4>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- below header=>wallpapers -->
+  <div id="main_father">
+    <section class="main">
+      <div class="main-container">
+        <div class="main-content">
+          <h1>Unsplash</h1>
+          <p>
+            The internet’s source of <span><a href="#" style="color:white; text-decoration: underline;">freely-useable
+                images.</a></span> <br>
+            Powered by creators everywhere.
+          </p>
+          <div class="main-search">
+
+            <input onchange="searchPage()" type="text" placeholder="Search free high-resolution photos"
+              style="height:50px; margin-bottom: 10px;" id="search_wall">
+
+
+            <div id="wallpaper_search">
+              <h5>Trending Searches</h5>
+              <ul id="wall_search" class="nav">
+                <li><button class="btn">Yellow-Petals</button></li>
+                <li><button class="btn">Car</button></li>
+                <li><button class="btn">Books</button></li>
+                <li><button class="btn">Photos</button></li>
+                <li><button class="btn">Night Sky</button></li>
+
+              </ul>
+
+              <h5>Trending Topics</h5>
+              <ul id="wall_search" class="nav">
+                <li><button class="btn">Fashion</button></li>
+                <li><button class="btn">People</button></li>
+                <li><button class="btn">Film</button></li>
+                <li><button class="btn">Nature</button></li>
+                <li><button class="btn">Animals</button></li>
+                <li><button class="btn">sky</button></li><br />
+              </ul>
+
+              <h5>Trending Collections</h5>
+              <ul id="wall_search" class="nav">
+                <li><button class="btn">Church</button></li>
+                <li><button class="btn">Interiors Frames</button></li>
+                <li><button class="btn">Mockups</button></li>
+                <li><button class="btn">Mute&nbsp&&nbsppastel</button></li>
+                <li><button class="btn">Light&nbspTones</button></li><br />
+
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+     
+    </section>
+
+  </div>
+
+  <div id="data_pics">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script type="module" src="script/index.js"></script>
+
+
+<script>
+
+  window.onload = function () {
+    const aftersearch = document.getElementById("aftersearch")
+    const wallpaper_search = document.getElementById("wallpaper_search")
+    document.onclick = function (event) {
+
+      if (event.target.id !== "aftersearch") {
+        aftersearch.style.display = "block"
+      }
+      if (event.target.id !== "search") {
+        aftersearch.style.display = "none"
+
+      }
+
+      if (event.target.id !== "wallpaper_search") {
+        wallpaper_search.style.display = "block"
+      }
+      if (event.target.id !== "search_wall") {
+        wallpaper_search.style.display = "none"
+
+      }
+    }
+  }
+
+  function toggle() {
+    const menu_click = document.getElementById("menu_click")
+    menu_click.classList.toggle("active")
+  }
+
+  /******************fetching parts starts from here***********/
+
+  const API = `yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+
+  let main1 = async () => {
+    let url = `https://api.unsplash.com/search/photos/?per_page=100&query=random&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+    let res = await fetch(url)
+    let data = await res.json()
+    //console.log(data.results)
+    append1(data.results)
+  }
+  main1()
+  let main2 = async () => {
+    let url = `https://api.unsplash.com/search/photos/?per_page=100&query=trending&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+    let res = await fetch(url)
+    let data = await res.json()
+    // console.log(data.results)
+    append2(data.results)
+  }
+  main2()
+  let main3 = async () => {
+    let url = `https://api.unsplash.com/search/photos/?per_page=100&query=famous&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+    let res = await fetch(url)
+    let data = await res.json()
+    // console.log(data.results)
+    append3(data.results)
+  }
+  main3()
+var likedPics=JSON.parse(localStorage.getItem("liked")) || [];
+  let append1 = (info) => {
+    info.forEach(function (element,index) {
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", "img")
+
+     /***********************************/
+     let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+          let picurl=element.urls.small;
+          
+          likedPics.push(picurl);
+
+          let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+          console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      let div1 = document.getElementById("div1")
+
+      div1.append(div)
+
+    })
+  }
+
+  let append2 = (info) => {
+    info.forEach(function (element) {
+
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", "img")
+
+      /***********************************/
+
+      
+      let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+        let picurl=element.urls.small;
+
+        likedPics.push(picurl);
+
+        let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+        console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      let div2 = document.getElementById("div2")
+
+      div2.append(div)
+
+    })
+  }
+
+  let append3 = (info) => {
+    info.forEach(function (element) {
+
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", "img")
+
+
+      /***********************************/
+
+      
+      let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+        let picurl=element.urls.small;
+
+        likedPics.push(picurl);
+
+        let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+        console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      let div3 = document.getElementById("div3")
+
+      div3.append(div)
+
+    })
+  }
+
+
+
+function searchPage(){
+ 
+  let query=document.getElementById("search").value
+
+  if(query===null || query===""){
+    query=document.getElementById("search_wall").value;
+  }
+  localStorage.setItem("search",JSON.stringify(query))
+  window.location.href="searchbar.html"
+}
+</script>
+
+<script>
+  let doit = async (d) => {
+    console.log(d.innerText)
+    let link = `https://api.unsplash.com/search/photos/?per_page=20&query=${d.innerText}&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+    let link1 = `https://api.unsplash.com/search/photos/?per_page=20&query=${d.innerText}&order_by=latest&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+    let link2 = `https://api.unsplash.com/search/photos/?per_page=20&query=world,,banners,buildings,news,people,saree&client_id=yFsVZhsgxGPfd74-rHMNijtzr7awIKbg7vpiwULmCx0`
+
+    let res = await fetch(link)
+    let data = await res.json()
+    // console.log(data.results)
+    append4(data.results)
+
+    let res1 = await fetch(link1)
+    let data1 = await res1.json()
+    // console.log(data1.results)
+    append5(data1.results)
+
+    let res2 = await fetch(link2)
+    let data2 = await res2.json()
+    // console.log(data2.results)
+    append6(data2.results)
+
+if(d.innerText=="Wallpaper")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/wallpaper.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Nature")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/nature.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Architecture")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/archi.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="3D Renders")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/renders.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Current Events")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/current.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Texture & Patterns")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/textures.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Business & Work")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/business.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+
+else if(d.innerText=="Experimental")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/experiment.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Film")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/film.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Animals")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/animals.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Travel")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/travel.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Fashion")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/fashion.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Foods & Drinks")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/food.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Health & Wellness")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/health.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="People")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/people.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Interiors")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/interiors.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Street Photography")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/streetpic.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Spirituality")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/spirit.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="History")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/history.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+else if(d.innerText=="Atheletics")
+{
+  let a = document.getElementById("main_father");
+    a.innerHTML = null;
+    a.style.marginBottom = "-350px"
+    let im = document.createElement("img")
+    im.src = "img/atheletics.png"
+    im.style.width = "100%";
+    a.append(im)
+}
+  }
+ 
+
+
+  let append4 = (info) => {
+    let d = document.getElementById("div1");
+    d.innerHTML = null
+    d.style.marginTop = "400px"
+
+    info.forEach(function (element) {
+      // console.log(element)
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", img)
+
+         /***********************************/
+
+      
+         let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+        let picurl=element.urls.small;
+
+        likedPics.push(picurl);
+
+        let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+        console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      div.append(img);
+
+      let div1 = document.getElementById("div1")
+
+      div1.append(div)
+    })
+  }
+
+  let append5 = (info) => {
+    let d = document.getElementById("div2");
+    d.innerHTML = null
+    d.style.marginTop = "400px"
+
+    let a = document.getElementById("main_father");
+    a.innerHTML = null;
+   
+
+
+    info.forEach(function (element) {
+      // console.log(element)
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", img)
+
+         /***********************************/
+
+      
+         let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+        let picurl=element.urls.small;
+
+        likedPics.push(picurl);
+
+        let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+        console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      div.append(img);
+
+      let div2 = document.getElementById("div2")
+
+      div2.append(div)
+
+    })
+  }
+
+
+  let append6 = (info) => {
+
+    let d = document.getElementById("div3");
+    d.innerHTML = null
+    d.style.marginTop = "400px"
+
+
+    let a = document.getElementById("main_father");
+    a.innerHTML = null;
+
+
+    info.forEach(function (element) {
+      // console.log(element)
+      let div = document.createElement("div")
+      div.setAttribute("id", "box")
+
+
+      let img = document.createElement("img")
+      img.src = element.urls.small;
+      img.setAttribute("id", img)
+
+        /***********************************/
+
+      
+        let likeBtn=document.createElement("img")
+        likeBtn.setAttribute("class","likes")
+        likeBtn.src="https://cdn-icons-png.flaticon.com/512/60/60993.png"
+        likeBtn.addEventListener("click",function(index){
+
+        let picurl=element.urls.small;
+
+        likedPics.push(picurl);
+
+        let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+        console.log(likedPics)
+
+        })
+
+        let propicDiv=document.createElement("div")
+        propicDiv.setAttribute("class","propicDiv")
+
+        let proPic=document.createElement("img")
+       proPic.setAttribute("class","proPic")
+       proPic.src=element.user.profile_image.large;
+
+        let username=document.createElement("p")
+        username.innerText=element.user.username;
+
+        propicDiv.append(proPic,username)
+
+        let addsign=document.createElement("img")
+        addsign.setAttribute("class","addsign")
+        addsign.src="istockAdvertise/addsign.png"
+
+      /*********************************/
+
+      div.append(img,likeBtn,propicDiv,addsign);
+
+      div.append(img);
+
+      let div3 = document.getElementById("div3")
+
+      div3.append(div)
+
+
+
+    })
+  }
+</script>
