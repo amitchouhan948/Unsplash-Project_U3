@@ -24,7 +24,9 @@
     align-items: center;
     text-decoration: none;
 }
-
+.header a{
+    text-decoration: none;
+}
 .photo, .like, .collection, .stats{
     display: flex;
     align-items: center;
