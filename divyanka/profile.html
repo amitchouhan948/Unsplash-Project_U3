@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+         #nav{
+            height:38px;
+            width:100%;
+             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display:flex;
+            justify-content: space-between;
+        } 
+        #one{
+            height:300px;
+            width:60%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+        }
+        #img{
+            height:150px;
+            width:150px;
+            border-radius: 50%;
+            margin-left: 16%;
+        }
+        #one>div:nth-child(1){
+            height:70%;
+            width:30%;
+        }
+        #one>div:nth-child(2){
+            height:100%;
+            width:70%;
+        }
+        #one>div:nth-child(2)>div:nth-child(1){
+            height:20%;
+            width:100%;
+            display: flex;
+        }
+        #one>div:nth-child(2)>div:nth-child(2){
+            height:70%;
+            width:100%;
+        }
+        button{
+            height:30px;
+            width:100px;
+            margin-left:40px;
+            margin-top: 16px;
+            border:1px solid black;
+            border-radius: 5px;
+        }
+        h1{
+            margin-top: 9px;
+            font-size: 34px;
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        p{
+            margin-top: 1px;
+            color:rgb(97, 93, 93);
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+        }
+        #lower-nav{
+            display:flex;
+            height:40px;
+            width:500px;
+           
+            margin-top:-17px;
+        }
+        #like,#collect,#stats,#photo{
+            height:100%;
+            width:25%;
+            display: flex;
+           
+        }
+        #like i{
+            height:100%;
+            width:25%;
+            display: flex;
+            gap:5px
+           
+        }
+        /* #like p:hover,#photo p:hover,#collect p:hover{
+            color: red;
+        } */
+        #collect i{
+            height:100%;
+            width:25%;
+            display: flex;
+            gap:5px
+           
+        }
+        #stats i{
+            height:100%;
+            width:25%;
+            display: flex;
+            gap:5px
+           
+        }
+        #photo i{
+            height:100%;
+            width:25%;
+            display: flex;
+            gap:5px
+           
+        }
+        #photo{
+            display:flex;
+            opacity: 0.4;
+        }
+        #photo:hover{
+            opacity: 1;
+        }
+        #like{
+            display:flex;
+            opacity: 0.4;
+        }
+        #like:hover{
+            opacity: 1;
+        }
+        #collect{
+            display:flex;
+            opacity: 0.4;
+        }
+        #collect:hover{
+            opacity: 1;
+        }
+        #stats{
+            display:flex;
+            opacity: 0.4;
+        }
+        #stats:hover{
+            opacity: 1;
+        }
+
+            
+        /* }
+        #like:hover,#photo:hover,#collect:hover,#stats:hover{
+            color:rgb(25, 17, 17)
+        } */
+        hr{
+            margin-top: -4px;
+        }
+        #box{
+           display:grid;
+           grid-template-columns: repeat(3,1fr);
+           gap:20px;
+        }
+        #pic{
+          height: auto;
+          width: 300px;
+        }
+        #photos{
+            height: 30px;
+            width: 30px;
+            border:none;
+            margin-top: -30px;
+            margin-left: 65px;
+        }
+        #name,#location{
+            text-transform: capitalize;
+        }
+
+        /********************************************************/
+
+        /*header and navbarr css part starts*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+        body {
+        font-family: 'Helvetica', sans-serif;
+        }
+
+      
+        .logo>a>img{
+            width:60px;
+            height:30px;
+        }
+       
+        ul {
+        list-style: none;
+        font-size:medium;
+        }
+        a{
+            text-decoration: none;
+            color: #767676;
+        }
+        /*****navbar******/
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            
+            }
+ 
+            .nav {
+                display: flex;
+                gap: 20px;
+                
+                 }
+
+            input{
+                width:623px;
+                height: 33px;
+                font-size: medium;  
+                border-radius: 15px;
+                border-width: 0.5px;
+                border: 0;
+                padding-left: 10px;
+                background-color: #f4f0f0; 
+                position: relative;
+            }
+
+            #menu_icon{
+                height:25px;
+                width:25px;
+                cursor: pointer;
+            }
+            .a{
+                height: auto;
+                width:auto;  
+                padding-top: 7px;
+            }
+           
+            #btn1{
+                height:115%;
+                width: auto;
+                margin-top:-15px ;
+                background-color: rgb(238, 245, 245);
+                border-width: 1px;
+                border-radius: 5px;
+                color: #767676;
+                cursor: pointer; 
+              padding-left: 10px;
+              padding-right: 10px;
+              /* padding-bottom: 15px; */
+            }
+
+            #user1,#alert{
+              /* height:30px; */
+              width:25px;
+              border-radius:55%;
+              margin-right:0 ;
+              }
+              #user1{
+                border: 1px solid grey;
+              }
+       
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <!-- searchbar div to be appended -->
+            <nav class="navbar">
+                <div class="left ">
+                    <div class="logo">
+                        <a href="index.html"><img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_4f2153ce7e0ebcddea8a5d6dc9787757/unsplash.png" alt=""></a>
+                    </div>
+                </div>
+            
+                <div class="nav-search-form ">
+                        <!-- <button id="srch_btn"><img src="img/seacrh - Copy.png" alt="search" onclick="find()"></button> -->
+                        <input onchange="onEnter()" type="text" placeholder="Search free high-resolution photos" id="search" >     
+                 
+                </div>
+            <div class="a">
+                <ul class="nav">
+                    
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><button id="btn1">Submit&nbspa&nbspphoto</button></li>
+                    <li><img src="https://cdn.pixabay.com/photo/2021/07/19/12/28/bell-6478083__340.png" alt="" id="alert"></li>
+                     <li><img src="https://tse4.explicit.bing.net/th?id=OIP.fVzdKE2EPZzB5PiI1pvaFQHaHa&pid=Api&P=0&w=169&h=169" alt="" id="user1"></li>
+                    <li><img src="../istockAdvertise/menu.png" alt="" id="menu_icon"></li>
+                </ul>
+            
+          
+            </div>
+            </nav>
+        </div>
+    </div>
+    <div id="one">
+        <div>
+            <img id="img" src="https://tse4.explicit.bing.net/th?id=OIP.fVzdKE2EPZzB5PiI1pvaFQHaHa&pid=Api&P=0&w=169&h=169" alt="abc"/>
+        </div>
+        <div>
+            <div>
+                <h1 id="name">Name</h1>
+                <button id="btn" onclick="edit()">Edit profile</button>
+            </div>
+            <div>
+                <p>Download free, beautiful high-quality photos curated by <span id="user">user</span>.</p>
+                <p>Not available for hire.</p>
+                <p id="location"></p>
+                <p id="instagram"></p>
+                <p id="twitter"></p>
+            </div>
+        </div>
+    </div>
+    <div id="lower-nav">
+        <div id="photo">
+            <i class="fa fa-fw fa-image">Photos<p id="photosp">0</p></i>
+        </div>
+        <div id="like">
+            <i class="fa fa-fw fa-heart">Likes<p id="likesp">0</p></i>
+        </div>
+        <div id="collect">
+            <i class="fa fa-fw fa-plus">collections<p>0</p></i>
+        </div>
+        <div id="stats">
+            <i class="fa fa-fw fa-graph">stats</i>
+        </div>
+    </div>
+    <hr>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+    //  let data=localStorage.setItem("liked",JSON.stringify(likedPics));
+     var likedata = JSON.parse(localStorage.getItem("liked"))
+    
+     console.log(likedata)
+     
+     let likes=document.querySelector("#like")
+     likes.addEventListener("click",function(){
+        displaydata(likedata)
+     })
+    
+
+     function displaydata(data){
+
+        document.getElementById("box").innerHTML=null
+         
+         data.forEach((el)=>{
+            console.log(el)
+             let div = document.createElement("div")
+            let img = document.createElement("img")
+            img.src=el
+            div.append(img)
+            document.querySelector("#box").append(div)
+         })
+     }
+
+
+     var imgdata = JSON.parse(localStorage.getItem("uploadImg"));
+
+     document.getElementById("photo").addEventListener("click",function(){
+        document.getElementById("box").innerHTML=null
+        document.getElementById("photosp").innerText=imgdata.length
+        console.log(imgdata)
+        imgdata.forEach((el)=>{
+            let div = document.createElement("div")
+            let img = document.createElement("img")
+            img.src=el.img
+            img.setAttribute("id","pic")
+            div.append(img)
+            document.querySelector("#box").append(div)
+            console.log(img)
+            
+        })
+     })
+ 
+      document.getElementById("likesp").innerText=likedata.length
+   
+
+      var data_arr = JSON.parse(localStorage.getItem("user_data"))
+      var array=JSON.parse(localStorage.getItem("userData"))
+    if(data_arr!==null){
+        console.log(data_arr.name)  
+        document.getElementById("name").innerText= data_arr.name + " " + data_arr.lastname;
+        document.getElementById("user").innerText= data_arr.name + " " + data_arr.lastname;
+        console.log(data_arr.name + " " + data_arr.lastname)
+      document.getElementById("location").innerHTML= `<i class="fa fa-fw fa-map"></i>`+data_arr.location
+      document.getElementById("instagram").innerHTML= `<i class="fa fa-fw fa-instagram"></i>`+data_arr.ig
+      document.getElementById("twitter").innerHTML= `<i class="fa fa-fw fa-twitter"></i>`+data_arr.twitter
+    }
+    else if(data_arr===null){
+  
+      document.getElementById("name").innerText=array[0].Fname + " " + array[0].Lname; //////////////
+      console.log(array[0].Fname + " " + array[0].Lname)
+      document.getElementById("user").innerText=array[0].Fname
+    }
+
+      function edit(){
+        console.log("htfhgv")
+        window.location.href="form.html"
+      }
+
+</script>
