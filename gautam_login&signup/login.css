@@ -1,0 +1,93 @@
+#logo_image{
+    height:50px;
+    width:50px;
+    margin-top:40px;
+   
+}
+#logo{
+    margin:auto;
+    height:300px;
+    width:70%;
+    text-align:center;
+}
+h2{
+    font-size: 22px;
+    margin-top:19px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+.greeting{
+    margin-bottom:35px;
+    font-size: 13px;
+    margin-top:-7px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+#logo > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    height:38px;
+    width:440px;
+    font-size:15px;
+    color:white;
+    font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;;
+    background-color: #1778f2;
+    border-radius: 3px;
+}
+#facebook_logo{
+    height:17px;
+    width:20px;
+    margin-right:15px;
+    border-radius: 50%;
+}
+p{
+    font-size: 14px;
+    margin-top:22px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+button{
+    height:38px;
+    width:440px;
+    background-color: black;
+    color:white;
+    border-radius: 3px;
+}
+input{
+    margin-top:10px;
+    height:38px;
+    width:434px;
+    border-radius: 3px;
+    border:1px solid black;
+}
+#forget_password{
+    margin-left: 230px;
+    text-decoration: underline;
+    color:#a9a9a9;
+}
+#login_form{
+    margin:auto;
+    height:300px;
+    width:440px;
+}
+label{
+    font-size:14.3px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+.join_signup{
+    margin:auto;
+    height:80px;
+    width:440px;
+    border: 1px solid #a9a9a9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-36px;
+}
+span{
+    text-decoration: underline;
+    color:#969099 ;
+}
+a{
+    color:#969099;
+}
+
