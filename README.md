@@ -12,6 +12,15 @@ Unsplash cloning construct week project of Unit-3
 ## 🛠 Skills
 Javascript, HTML, CSS and Localstorage
 
+## Screenshots
+
+<img width="100%" src="https://i.imgur.com/YK8WRij.png" alt="image" />
+
+<img width="100%" src="https://i.imgur.com/sQTrKeS.png" alt="image" />
+
+<img width="100%" src="https://i.imgur.com/QK1Nygs.png" alt="image" />
+
+
 ## Authors
 - [@pravhat ray](https://github.com/pravhatray)
 - [@divyanka rai](https://github.com/DivyankaRai)
